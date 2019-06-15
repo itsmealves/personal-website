@@ -1,0 +1,46 @@
+.main-nav {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    -webkit-transition: background-color 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-nav ul li a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.main-nav ul li {
+    font-size: 14px;
+    display: inline-block;
+    -webkit-transition: font-size 500ms;
+    -moz-transition: font-size 500ms;
+    -o-transition: font-size 500ms;
+    transition: font-size 500ms;
+}
+
+.main-nav ul li:hover {
+    font-size: 16px;
+}
+
+nav>ol li, nav>ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li:not(:first-child):before {
+    content: '/';
+    padding: 0 12px 0 9px;
+}
